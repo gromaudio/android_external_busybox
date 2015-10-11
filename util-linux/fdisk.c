@@ -88,7 +88,7 @@ typedef unsigned long long ullong;
 /* Used for sector numbers. Partition formats we know
  * do not support more than 2^32 sectors
  */
-typedef uint32_t sector_t;
+typedef unsigned long long sector_t;
 #if UINT_MAX == 4294967295
 # define SECT_FMT ""
 #elif ULONG_MAX == 4294967295

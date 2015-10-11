@@ -21,11 +21,15 @@
 #include "unicode.h"
 
 #if ENABLE_FEATURE_CHECK_TAINTED_MODULE
-enum {
-	TAINT_PROPRIETORY_MODULE = (1 << 0),
-	TAINT_FORCED_MODULE      = (1 << 1),
-	TAINT_UNSAFE_SMP         = (1 << 2),
-};
+//enum {
+//	TAINT_PROPRIETORY_MODULE = (1 << 0),
+//	TAINT_FORCED_MODULE      = (1 << 1),
+//	TAINT_UNSAFE_SMP         = (1 << 2),
+//};
+
+#define	TAINT_PROPRIETORY_MODULE	(1 << 0)
+#define	TAINT_FORCED_MODULE     	(1 << 1)
+#define	TAINT_UNSAFE_SMP        	(1 << 2)
 
 static void check_tainted(void)
 {
